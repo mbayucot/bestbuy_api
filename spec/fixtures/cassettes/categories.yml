@@ -1,0 +1,288 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories(id=abcat500&name=Electronics)?apiKey=123FakeApiKey&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 01 Dec 2018 08:10:25 GMT
+      Server:
+      - Best Buy Public APIs
+      X-Cache-Hit:
+      - 'true'
+      Content-Length:
+      - '293'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"currentPage":1,"total":0,"totalPages":0,"queryTime":"0.047","totalTime":"0.048","partial":false,"canonicalUrl":"/v1/categories(id=\"abcat500\"&name=\"Electronics\")?show=id,name,subCategories.id,subCategories.name&format=json&apiKey=123FakeApiKey","categories":[]}'
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:09:55 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123FakeApiKey&format=json&show=id,name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 01 Dec 2018 08:09:55 GMT
+      Server:
+      - Best Buy Public APIs
+      X-Cache-Hit:
+      - 'true'
+      Content-Length:
+      - '714'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":10,"currentPage":1,"total":3941,"totalPages":395,"queryTime":"0.023","totalTime":"0.037","partial":false,"canonicalUrl":"/v1/categories?show=id,name&format=json&apiKey=123FakeApiKey","categories":[{"id":"abcat0010000","name":"Gift
+        Ideas"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0101000","name":"TVs"},{"id":"abcat0101001","name":"All
+        Flat-Screen TVs"},{"id":"abcat0101005","name":"TV/DVD Combos"},{"id":"abcat0102000","name":"Blu-ray
+        & DVD Players"},{"id":"abcat0102003","name":"Blu-ray Players"},{"id":"abcat0102005","name":"DVD
+        Players"},{"id":"abcat0104000","name":"Digital TV Tuners & Converters"},{"id":"abcat0105000","name":"TV
+        & Internet Service Providers"}]}'
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:09:57 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123Key&format=json&show=name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Dec 2018 08:09:56 GMT
+      Server:
+      - Apigee Router
+      Content-Length:
+      - '100'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
+        to validate your API Key.\"}\n        "
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:09:58 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123FakeApiKey&format=json&limit=10&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 01 Dec 2018 08:09:58 GMT
+      Server:
+      - Best Buy Public APIs
+      X-Cache-Hit:
+      - 'true'
+      Content-Length:
+      - '6329'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"from":11,"to":20,"currentPage":2,"total":3941,"totalPages":395,"queryTime":"0.051","totalTime":"0.060","partial":false,"canonicalUrl":"/v1/categories?page=2&format=json&apiKey=123FakeApiKey","categories":[{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture","active":true,"url":"https://www.bestbuy.com/site/tv-home-theater/tv-stands-mounts-furniture/abcat0106000.c?id=abcat0106000&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"}],"subCategories":[{"id":"abcat0106001","name":"TV
+        Stands"},{"id":"abcat0106004","name":"TV Mounts"},{"id":"pcmcat332100050008","name":"Projector
+        Mounts & Screens"},{"id":"pcmcat332100050010","name":"Speaker Stands & Mounts"},{"id":"pcmcat332100050015","name":"A/V
+        Component Shelving"},{"id":"abcat0106008","name":"A/V Component Racks & Shelving"},{"id":"abcat0106010","name":"CD
+        & DVD Media Storage"},{"id":"pcmcat249700050007","name":"Home Theater Furniture"},{"id":"pcmcat219300050000","name":"Magnolia
+        Home Theater TV Stands"},{"id":"pcmcat184500050000","name":"Furniture Assembly"},{"id":"pcmcat218900050031","name":"Furniture
+        Collections"}]},{"id":"abcat0106001","name":"TV Stands","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/tv-stands/abcat0106001.c?id=abcat0106001&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106001","name":"TV Stands"}],"subCategories":[{"id":"pcmcat332100050000","name":"All
+        TV Stands"},{"id":"pcmcat332100050001","name":"TV Corner Stands"},{"id":"pcmcat332100050002","name":"TV
+        Stands with Flat-Panel Mounts"},{"id":"pcmcat332100050003","name":"TV Stands
+        with Fireplace"},{"id":"pcmcat1521490874043","name":"TV Stands with Cabinets"}]},{"id":"abcat0106002","name":"Speaker
+        Stands","active":true,"url":"https://www.bestbuy.com/site/speaker-stands-mounts/speaker-stands/abcat0106002.c?id=abcat0106002&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0200000","name":"Audio"},{"id":"abcat0208000","name":"Home
+        Audio Accessories"},{"id":"abcat0208015","name":"Speaker Accessories"},{"id":"pcmcat332100050010","name":"Speaker
+        Stands & Mounts"},{"id":"abcat0106002","name":"Speaker Stands"}],"subCategories":[]},{"id":"abcat0106004","name":"TV
+        Mounts","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/tv-mounts/abcat0106004.c?id=abcat0106004&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106004","name":"TV Mounts"}],"subCategories":[{"id":"pcmcat332100050018","name":"Full-Motion
+        TV Mounts"},{"id":"pcmcat332100050019","name":"Tilt TV Mounts"},{"id":"pcmcat332100050020","name":"Fixed
+        TV Mounts"},{"id":"pcmcat332100050021","name":"Ceiling TV Mounts"},{"id":"pcmcat275900050017","name":"TV
+        Mount Accessories"},{"id":"pcmcat138100050028","name":"TV Mounting Services"}]},{"id":"abcat0106007","name":"Speaker
+        Wall Mounts","active":true,"url":"https://www.bestbuy.com/site/speaker-accessories/speaker-wall-mounts/abcat0106007.c?id=abcat0106007&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0200000","name":"Audio"},{"id":"abcat0208000","name":"Home
+        Audio Accessories"},{"id":"abcat0208015","name":"Speaker Accessories"},{"id":"abcat0106007","name":"Speaker
+        Wall Mounts"}],"subCategories":[{"id":"pcmcat138100050029","name":"Speaker
+        Mounting"}]},{"id":"abcat0106008","name":"A/V Component Racks & Shelving","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/av-component-racks/abcat0106008.c?id=abcat0106008&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106008","name":"A/V Component Racks
+        & Shelving"}],"subCategories":[]},{"id":"abcat0106009","name":"Home Theater
+        Seating","active":true,"url":"https://www.bestbuy.com/site/home-theater-furniture/home-theater-seating/abcat0106009.c?id=abcat0106009&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"pcmcat312300050015","name":"Home, Garage & Office"},{"id":"pcmcat249700050006","name":"Furniture
+        & Decor"},{"id":"pcmcat249700050007","name":"Home Theater Furniture"},{"id":"abcat0106009","name":"Home
+        Theater Seating"}],"subCategories":[]},{"id":"abcat0106010","name":"CD & DVD
+        Media Storage","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/cd-dvd-storage/abcat0106010.c?id=abcat0106010&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"}],"subCategories":[{"id":"abcat0106015","name":"Media
+        Cabinets"},{"id":"pcmcat332100050012","name":"Media Shelf Towers"},{"id":"abcat0106011","name":"Portable
+        CD & DVD Storage"},{"id":"abcat0106020","name":"Jewel Cases"},{"id":"abcat0106019","name":"xFire
+        Safes"}]},{"id":"abcat0106011","name":"Portable CD & DVD Storage","active":true,"url":"https://www.bestbuy.com/site/cd-dvd-storage/portable-cd-dvd-storage/abcat0106011.c?id=abcat0106011&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"},{"id":"abcat0106011","name":"Portable
+        CD & DVD Storage"}],"subCategories":[{"id":"abcat0106012","name":"Small"},{"id":"abcat0106013","name":"Medium"},{"id":"abcat0106014","name":"Large"}]},{"id":"abcat0106015","name":"Media
+        Cabinets","active":true,"url":"https://www.bestbuy.com/site/cd-dvd-storage/media-cabinets/abcat0106015.c?id=abcat0106015&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
+        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
+        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"},{"id":"abcat0106015","name":"Media
+        Cabinets"}],"subCategories":[{"id":"abcat0106016","name":"Small"},{"id":"abcat0106017","name":"Medium"},{"id":"abcat0106018","name":"Large"}]}]}'
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:09:59 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123Key&format=json&limit=10&page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Dec 2018 08:09:58 GMT
+      Server:
+      - Apigee Router
+      Content-Length:
+      - '100'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
+        to validate your API Key.\"}\n        "
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:10:00 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/categories(id=abcat500&name=Electronics)?apiKey=123Key&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Dec 2018 08:09:59 GMT
+      Server:
+      - Apigee Router
+      Content-Length:
+      - '100'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
+        to validate your API Key.\"}\n        "
+    http_version: 
+  recorded_at: Sat, 01 Dec 2018 08:10:01 GMT
+recorded_with: VCR 4.0.0
