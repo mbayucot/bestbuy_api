@@ -1,5 +1,7 @@
 # Best Buy API
 
+[![Build Status](https://travis-ci.org/mbayucot/bestbuy_api.svg?branch=master)](https://travis-ci.org/mbayucot/bestbuy_api)
+
 A Ruby wrapper for the [Best Buy developer API](https://developer.bestbuy.com/).
 
 ## Installation
