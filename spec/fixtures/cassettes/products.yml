@@ -29,20 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:10:32 GMT
+      - Mon, 28 Jan 2019 13:05:01 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
-      - 'false'
+      - 'true'
       Content-Length:
       - '550'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":0,"currentPage":1,"total":0,"totalPages":0,"queryTime":"0.054","totalTime":"0.054","partial":false,"canonicalUrl":"/v1/products((search=\"iPhone\")&sku=123&categoryPath.id=abcat500&categoryPath.name=Electronics&condition=\"new\"&customerReviewAverage=5&manufacturer=\"Apple\")?show=sku,categoryPath.id,categoryPath.name,condition,customerReviewAverage,manufacturer,regularPrice,salePrice,shippingCost,customerReviewCount,percentSavings,freeShipping,url,name,description,image&format=json&apiKey=123FakeApiKey","products":[]}'
+      string: '{"from":1,"to":0,"currentPage":1,"total":0,"totalPages":0,"queryTime":"0.045","totalTime":"0.046","partial":false,"canonicalUrl":"/v1/products((search=\"iPhone\")&sku=123&categoryPath.id=abcat500&categoryPath.name=Electronics&condition=\"new\"&customerReviewAverage=5&manufacturer=\"Apple\")?show=sku,categoryPath.id,categoryPath.name,condition,customerReviewAverage,manufacturer,regularPrice,salePrice,shippingCost,customerReviewCount,percentSavings,freeShipping,url,name,description,image&format=json&apiKey=123FakeApiKey","products":[]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:03 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:53 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/products?apiKey=123FakeApiKey&format=json&show=sku,name
@@ -72,28 +72,29 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:10:02 GMT
+      - Mon, 28 Jan 2019 13:05:02 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '952'
+      - '948'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":10,"currentPage":1,"total":190481,"totalPages":19049,"queryTime":"0.103","totalTime":"0.130","partial":false,"canonicalUrl":"/v1/products?show=sku,name&format=json&apiKey=123FakeApiKey","products":[{"sku":1000006,"name":"Spy
+      string: '{"from":1,"to":10,"currentPage":1,"total":193231,"totalPages":19324,"queryTime":"0.091","totalTime":"0.122","partial":false,"canonicalUrl":"/v1/products?show=sku,name&format=json&apiKey=123FakeApiKey","products":[{"sku":1000006,"name":"Spy
         Kids: All the Time in the World [Includes Digital Copy] [UltraViolet] [Blu-ray]
         [2011]"},{"sku":1000016,"name":"4-Year Standard Geek Squad Protection"},{"sku":1000034,"name":"4-Year
         Standard Geek Squad Protection"},{"sku":1000592,"name":"The Mentalist: The
-        Complete Fifth Season [5 Discs] [DVD]"},{"sku":1001149,"name":"Rambo [Extended
-        Cut] [Blu-ray] [2008]"},{"sku":1001158,"name":"Our Family Wedding [DVD] [2010]"},{"sku":1001176,"name":"Johnny
-        Handsome [Blu-ray] [1989]"},{"sku":1001185,"name":"Lock Up [Blu-ray] [1989]"},{"sku":1001246,"name":"Hot
-        Tub Time Machine [Unrated] [DVD] [2010]"},{"sku":1001255,"name":"Predator
-        [Ultimate Hunter Edition] [2 Discs] [With Movie Money] [Blu-ray] [1987]"}]}'
+        Complete Fifth Season [5 Discs] [DVD]"},{"sku":1001158,"name":"Our Family
+        Wedding [DVD] [2010]"},{"sku":1001176,"name":"Johnny Handsome [Blu-ray] [1989]"},{"sku":1001185,"name":"Lock
+        Up [Blu-ray] [1989]"},{"sku":1001246,"name":"Hot Tub Time Machine [Unrated]
+        [DVD] [2010]"},{"sku":1001255,"name":"Predator [Ultimate Hunter Edition] [2
+        Discs] [With Movie Money] [Blu-ray] [1987]"},{"sku":1001307,"name":"Diary
+        of a Wimpy Kid [DVD] [2010]"}]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:04 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:55 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/products?apiKey=123Key&format=json&show=sku
@@ -115,7 +116,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 01 Dec 2018 08:10:03 GMT
+      - Mon, 28 Jan 2019 13:06:39 GMT
       Server:
       - Apigee Router
       Content-Length:
@@ -127,7 +128,7 @@ http_interactions:
       string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
         to validate your API Key.\"}\n        "
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:05 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:56 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/products?apiKey=123FakeApiKey&format=json&show=sku
@@ -157,20 +158,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:10:40 GMT
+      - Mon, 28 Jan 2019 13:06:25 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
-      - 'false'
+      - 'true'
       Content-Length:
       - '380'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":10,"currentPage":1,"total":190480,"totalPages":19048,"queryTime":"0.029","totalTime":"0.059","partial":false,"canonicalUrl":"/v1/products?show=sku&format=json&apiKey=123FakeApiKey","products":[{"sku":1000006},{"sku":1000016},{"sku":1000034},{"sku":1000592},{"sku":1001149},{"sku":1001158},{"sku":1001176},{"sku":1001185},{"sku":1001246},{"sku":1001255}]}'
+      string: '{"from":1,"to":10,"currentPage":1,"total":193231,"totalPages":19324,"queryTime":"0.032","totalTime":"0.064","partial":false,"canonicalUrl":"/v1/products?show=sku&format=json&apiKey=123FakeApiKey","products":[{"sku":1000006},{"sku":1000016},{"sku":1000034},{"sku":1000592},{"sku":1001158},{"sku":1001176},{"sku":1001185},{"sku":1001246},{"sku":1001255},{"sku":1001307}]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:11 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:57 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/products((search=iPhone)&sku=123&categoryPath.id=abcat500&categoryPath.name=Electronics&condition=new&customerReviewAverage=5&manufacturer=Apple)?apiKey=123Key&format=json&limit=10&page=1&show=sku,categoryPath.id,categoryPath.name,condition,customerReviewAverage,manufacturer,regularPrice,salePrice,shippingCost,customerReviewCount,percentSavings,freeShipping,url,name,description,image
@@ -192,7 +193,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 01 Dec 2018 08:10:41 GMT
+      - Mon, 28 Jan 2019 13:06:26 GMT
       Server:
       - Apigee Router
       Content-Length:
@@ -204,5 +205,5 @@ http_interactions:
       string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
         to validate your API Key.\"}\n        "
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:12 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:58 GMT
 recorded_with: VCR 4.0.0

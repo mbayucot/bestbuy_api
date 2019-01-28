@@ -2,17 +2,6 @@ RSpec.describe BestbuyApi::Store do
   let(:fake_api_key) { '123FakeApiKey' }
   let(:invalid_api_key) { '123Key' }
   let(:path) { 'stores' }
-  let(:attributes) do
-    {
-      id: { kw: 'storeId', search: true },
-      city: { search: true },
-      state: { kw: 'region', search: true },
-      postal_code: { kw: 'fullPostalCode', search: true },
-      store_type: { kw: 'storeType' },
-      name: {}, address: {}, address2: {}, country: {},
-      hours: {}, phone: {}
-    }
-  end
   let(:stores) do
     BestbuyApi::Store.select(:id, :city, :state, :postal_code, :store_type,
                              :name, :address, :address2, :country, :hours, :phone)
@@ -24,20 +13,26 @@ RSpec.describe BestbuyApi::Store do
 
   it { expect(BestbuyApi::Store).to be < BestbuyApi::Model }
 
-  it 'should have a path constant' do
-    expect(BestbuyApi::Store).to be_const_defined(:PATH)
+  describe '#path' do
+    context 'when given an invalid path' do
+      it { expect(BestbuyApi::Store.path).to be_nil }
+    end
+
+    context 'when given a valid path' do
+      it { expect(BestbuyApi::Store.path('stores')).to eq(path) }
+    end
   end
 
-  it 'should have an attributes constant' do
-    expect(BestbuyApi::Store).to be_const_defined(:ATTRIBUTES)
-  end
+  describe '#attribute' do
+    context 'when given an invalid attribute' do
+      it 'raises a an argument error' do
+        expect { BestbuyApi::Store.attribute }.to raise_error(ArgumentError)
+      end
+    end
 
-  it 'sets the path constant' do
-    expect(BestbuyApi::Store::PATH).to eq(path)
-  end
-
-  it 'sets the attribute constant' do
-    expect(BestbuyApi::Store::ATTRIBUTES).to eq(attributes)
+    context 'when given a valid attribute' do
+      it { expect(BestbuyApi::Store.attribute(:city, search: true)).to include(city: { search: true }) }
+    end
   end
 
   describe '#select' do

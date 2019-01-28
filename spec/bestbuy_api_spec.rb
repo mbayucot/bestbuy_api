@@ -3,7 +3,7 @@ RSpec.describe BestbuyApi do
 
   context 'when no api key is specified' do
     before do
-      restore_default_config
+      BestbuyApi.config.api_key = nil
     end
 
     it 'returns nil' do
@@ -21,7 +21,7 @@ RSpec.describe BestbuyApi do
     end
 
     after do
-      restore_default_config
+      BestbuyApi.config.api_key = nil
     end
   end
 end

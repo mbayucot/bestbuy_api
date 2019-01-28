@@ -2,24 +2,6 @@ RSpec.describe BestbuyApi::Product do
   let(:fake_api_key) { '123FakeApiKey' }
   let(:invalid_api_key) { '123Key' }
   let(:path) { 'products' }
-  let(:attributes) do
-    {
-      keyword: { kw: 'search', search: true, read: false },
-      sku: { search: true },
-      category_id: { kw: 'categoryPath.id', search: true },
-      category_name: { kw: 'categoryPath.name', search: true },
-      condition: { search: true },
-      customer_rating: { kw: 'customerReviewAverage', search: true },
-      manufacturer: { search: true },
-      regular_price: { kw: 'regularPrice' },
-      sale_price: { kw: 'salePrice' },
-      shipping_cost: { kw: 'shippingCost' },
-      reviews_count: { kw: 'customerReviewCount' },
-      discount: { kw: 'percentSavings' },
-      free_shipping: { kw: 'freeShipping' },
-      url: {}, name: {}, description: {}, image: {}
-    }
-  end
   let(:products) do
     BestbuyApi::Product.select(:sku, :category_id, :category_name, :condition,
                                :customer_rating, :manufacturer, :regular_price,
@@ -33,20 +15,26 @@ RSpec.describe BestbuyApi::Product do
 
   it { expect(BestbuyApi::Product).to be < BestbuyApi::Model }
 
-  it 'should have a path constant' do
-    expect(BestbuyApi::Product).to be_const_defined(:PATH)
+  describe '#path' do
+    context 'when given an invalid path' do
+      it { expect(BestbuyApi::Product.path).to be_nil }
+    end
+
+    context 'when given a valid path' do
+      it { expect(BestbuyApi::Product.path('products')).to eq(path) }
+    end
   end
 
-  it 'should have an attributes constant' do
-    expect(BestbuyApi::Product).to be_const_defined(:ATTRIBUTES)
-  end
+  describe '#attribute' do
+    context 'when given an invalid attribute' do
+      it 'raises a an argument error' do
+        expect { BestbuyApi::Product.attribute }.to raise_error(ArgumentError)
+      end
+    end
 
-  it 'sets the path constant' do
-    expect(BestbuyApi::Product::PATH).to eq(path)
-  end
-
-  it 'sets the attribute constant' do
-    expect(BestbuyApi::Product::ATTRIBUTES).to eq(attributes)
+    context 'when given a valid attribute' do
+      it { expect(BestbuyApi::Product.attribute(:sku, search: true)).to include(sku: { search: true }) }
+    end
   end
 
   describe '#select' do

@@ -2,37 +2,35 @@ RSpec.describe BestbuyApi::Category do
   let(:fake_api_key) { '123FakeApiKey' }
   let(:invalid_api_key) { '123Key' }
   let(:path) { 'categories' }
-  let(:attributes) do
-    {
-      id: { search: true },
-      name: { search: true },
-      subcategory_id: { kw: 'subCategories.id' },
-      subcategory_name: { kw: 'subCategories.name' }
-    }
-  end
   let(:categories) do
     BestbuyApi::Category.select(:id, :name, :subcategory_id, :subcategory_name)
-                        .where(id: 'abcat500', name: 'Electronics')
+                        .where(name: 'Electronics')
                         .limit(10)
                         .page(1)
   end
 
   it { expect(BestbuyApi::Category).to be < BestbuyApi::Model }
 
-  it 'should have a path constant' do
-    expect(BestbuyApi::Category).to be_const_defined(:PATH)
+  describe '#path' do
+    context 'when given an invalid path' do
+      it { expect(BestbuyApi::Category.path).to be_nil }
+    end
+
+    context 'when given a valid path' do
+      it { expect(BestbuyApi::Category.path('categories')).to eq(path) }
+    end
   end
 
-  it 'should have an attributes constant' do
-    expect(BestbuyApi::Category).to be_const_defined(:ATTRIBUTES)
-  end
+  describe '#attribute' do
+    context 'when given an invalid attribute' do
+      it 'raises a an argument error' do
+        expect { BestbuyApi::Category.attribute }.to raise_error(ArgumentError)
+      end
+    end
 
-  it 'sets the path constant' do
-    expect(BestbuyApi::Category::PATH).to eq(path)
-  end
-
-  it 'sets the attribute constant' do
-    expect(BestbuyApi::Category::ATTRIBUTES).to eq(attributes)
+    context 'when given a valid attribute' do
+      it { expect(BestbuyApi::Category.attribute(:id, search: true)).to include(id: { search: true }) }
+    end
   end
 
   describe '#select' do
@@ -144,7 +142,7 @@ RSpec.describe BestbuyApi::Category do
 
       it 'returns the correct url' do
         VCR.use_cassette(path, record: :new_episodes) do
-          expect(categories.url).to eq('https://api.bestbuy.com/v1/categories(id=abcat500&name=Electronics)?apiKey=123FakeApiKey&format=json&limit=10&page=1&show=id%2Cname%2CsubCategories.id%2CsubCategories.name')
+          expect(categories.url).to eq('https://api.bestbuy.com/v1/categories(name=Electronics)?apiKey=123FakeApiKey&format=json&limit=10&page=1&show=id%2Cname%2CsubCategories.id%2CsubCategories.name')
         end
       end
     end

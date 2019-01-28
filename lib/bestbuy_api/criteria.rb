@@ -1,10 +1,11 @@
+require_relative 'params'
+require_relative 'request'
 require 'forwardable'
 
 module BestbuyApi
-  # Collect the parameters and validates the attributes
   class Criteria
     extend Forwardable
-    def_delegators :request, :items, :pagination, :url
+    def_delegators :response, :items, :pagination, :url
 
     def initialize(klass)
       @klass = klass
@@ -15,18 +16,14 @@ module BestbuyApi
     end
 
     def select(args)
-      # Check on attributes that are readable
-      attributes = @klass::ATTRIBUTES.select { |_k, v| v.key?(:read) ? v[:read] : true }
-      args.each { |k, _v| assert_keys(attributes.keys, k) }
+      assert_keys(args, @klass.attributes[:read])
 
       criteria[:attributes] = args
       self
     end
 
     def where(args)
-      # Check on attributes that are searchable
-      attributes = @klass::ATTRIBUTES.select { |_k, v| v.key?(:search) && v[:search] }
-      args.each { |k, _v| assert_keys(attributes.keys, k) }
+      assert_keys(args, @klass.attributes[:search])
 
       criteria[:conditions].merge!(args)
       self
@@ -42,17 +39,26 @@ module BestbuyApi
       self
     end
 
-    private
-
-    def request
-      @request ||= BestbuyApi::Request.new(@klass::PATH, @klass::ATTRIBUTES, criteria)
+    def response
+      params = Params.new(criteria, @klass.attributes)
+      request.find(params.structure)
     end
 
-    def assert_keys(valid_keys, key)
-      return true if valid_keys.include?(key)
+    private
 
-      raise MissingAttributeError, "Unknown attribute: #{key.inspect}. Valid attributes are: " \
+    def assert_keys(args, attributes)
+      valid_keys = attributes.keys
+      args.each do |key, _v|
+        unless valid_keys.include?(key)
+          raise MissingAttributeError, "Unknown attribute: #{key.inspect}. Valid attributes are: " \
                             "#{valid_keys.map(&:inspect).join(', ')}"
+        end
+      end
+    end
+
+    def request
+      api_key = BestbuyApi.config.api_key
+      @request ||= Request.new(api_key, @klass.attributes[:path])
     end
   end
 end

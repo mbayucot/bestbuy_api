@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/categories(id=abcat500&name=Electronics)?apiKey=123FakeApiKey&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
+    uri: https://api.bestbuy.com/v1/categories(name=Electronics)?apiKey=123FakeApiKey&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
     body:
       encoding: US-ASCII
       string: ''
@@ -29,20 +29,182 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:10:25 GMT
+      - Mon, 28 Jan 2019 13:04:53 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '293'
+      - '17099'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":0,"currentPage":1,"total":0,"totalPages":0,"queryTime":"0.047","totalTime":"0.048","partial":false,"canonicalUrl":"/v1/categories(id=\"abcat500\"&name=\"Electronics\")?show=id,name,subCategories.id,subCategories.name&format=json&apiKey=123FakeApiKey","categories":[]}'
+      string: '{"from":1,"to":1,"currentPage":1,"total":1,"totalPages":1,"queryTime":"0.053","totalTime":"0.075","partial":false,"canonicalUrl":"/v1/categories(name=\"Electronics\")?show=id,name,subCategories.id,subCategories.name&format=json&apiKey=123FakeApiKey","categories":[{"id":"pcmcat144600050035","name":"Electronics","subCategories":[{"id":"pcmcat137100050004","name":"Apple
+        Answers Day"},{"id":"abcat0207001","name":"Band Instruments"},{"id":"abcat0405000","name":"Photo
+        Processing"},{"id":"cat16188","name":"Business-to-Business"},{"id":"pcmcat106200050008","name":"Video
+        Games for Kids and Families"},{"id":"pcmcat120200050058","name":"Fisher House"},{"id":"pcmcat127000050004","name":"Garmin
+        Learning Center"},{"id":"pcmcat140800050004","name":"Best Brands - Best Help"},{"id":"pcmcat143800050032","name":"Best
+        Brands - Best Help - Best Buy"},{"id":"pcmcat146400050002","name":"HP Info
+        Center"},{"id":"pcmcat149100050000","name":"Photo & Video Pro Shop"},{"id":"pcmcat149600050186","name":"What
+        is Geocaching?"},{"id":"pcmcat149600050187","name":"MN 150 Geocaching History
+        Challenge"},{"id":"pcmcat152600050009","name":"Walk Out Working"},{"id":"pcmcat154300050020","name":"Designer
+        Accessories"},{"id":"pcmcat155400050026","name":"Best Buy''s Satellite Radio
+        Merger Details"},{"id":"pcmcat156200050010","name":"Back-to-School Bundles"},{"id":"pcmcat156200050011","name":"Define
+        your space"},{"id":"pcmcat156300050037","name":"tjb TestTopRated"},{"id":"pcmcat156300050040","name":"DIRECTV
+        - Top Rated"},{"id":"pcmcat156400050041","name":"Bluetooth"},{"id":"pcmcat157900050043","name":"Mobile
+        Upgrade"},{"id":"pcmcat158500050030","name":"Mobile Broadband Cards"},{"id":"pcmcat159300050006","name":"Apple
+        iPhone 3G"},{"id":"pcmcat159400050009","name":"Games for Everyone"},{"id":"pcmcat160400050004","name":"Speakeasy"},{"id":"pcmcat160500050040","name":"Motorola
+        Female"},{"id":"pcmcat161100050036","name":"Blue Label"},{"id":"pcmcat161100050038","name":"Blue
+        Label Laptops"},{"id":"pcmcat161300050009","name":"MSN Direct"},{"id":"pcmcat164500050001","name":"Command
+        & Conquer"},{"id":"pcmcat164500050007","name":"Midnight Store Openings"},{"id":"pcmcat165100050013","name":"HP
+        Magic"},{"id":"pcmcat166800050138","name":"NVIDIA - Speak Visual"},{"id":"pcmcat167200050096","name":"Satellite
+        Radio Sirius"},{"id":"pcmcat167200050097","name":"Satellite Radio XM"},{"id":"pcmcat168700050022","name":"Intel-Powered
+        Blu-ray Laptops"},{"id":"pcmcat168900050008","name":"Targus Mac-Compatible
+        Accessories"},{"id":"pcmcat169500050017","name":"Performance-tuned, Microsoft
+        Tested"},{"id":"pcmcat170100050000","name":"Microsoft Volume Licensing"},{"id":"pcmcat17100050022","name":"Cine
+        Latino"},{"id":"pcmcat173000050010","name":"Ad test"},{"id":"pcmcat174700050014","name":"The
+        Beatles Albums, Beatles Songs, Beatles Lyrics"},{"id":"pcmcat174800050007","name":"Pearl
+        Jam Albums, Pearl Jam Songs, Pearl Jam Lyrics"},{"id":"pcmcat175000050010","name":"SkinIt!"},{"id":"pcmcat175400050008","name":"O2
+        Wireless"},{"id":"pcmcat175500050005","name":"Watch TV On Your PC"},{"id":"pcmcat177000050000","name":"HP
+        Small Business Central"},{"id":"pcmcat177000050008","name":"HP Monsters vs.
+        Aliens"},{"id":"pcmcat17700050053","name":"Tax Center"},{"id":"pcmcat177800050004","name":"No-Contract
+        Blackberry"},{"id":"pcmcat177800050005","name":"AT&T Xenon"},{"id":"pcmcat177800050007","name":"Asus
+        G50VT-X5 Gaming Laptop"},{"id":"pcmcat177800050031","name":"LoJack"},{"id":"pcmcat179600050001","name":"Call
+        of Duty"},{"id":"pcmcat179600050012","name":"MOTO W223 Renew"},{"id":"pcmcat180500050008","name":"Plantronics"},{"id":"pcmcat180500050009","name":"Logitech
+        - Be There"},{"id":"pcmcat180700050001","name":"World of Warcraft"},{"id":"pcmcat180800050012","name":"Dale
+        Jr GPS"},{"id":"pcmcat181600050001","name":"Palm Treo Pro"},{"id":"pcmcat181900050000","name":"Boost
+        Mobile Phones"},{"id":"pcmcat183100050005","name":"Palm Pre"},{"id":"pcmcat185300050002","name":"You
+        spoke. We listened."},{"id":"pcmcat185500050009","name":"Microsoft Windows
+        7 Pre-Order"},{"id":"pcmcat185900050020","name":"Windows Mobile"},{"id":"pcmcat186100050003","name":"Windows
+        Upgrade Offer"},{"id":"pcmcat186600050006","name":"Intel Discover the Difference"},{"id":"pcmcat186700050023","name":"HP
+        Declare Yourself"},{"id":"pcmcat187000050006","name":"Verizon Broadband"},{"id":"pcmcat187300050005","name":"Micrsoft
+        Windows 7"},{"id":"pcmcat187600050012","name":"Acer Home Server"},{"id":"pcmcat188000050005","name":"Geek
+        Squad Windows 7 Installation"},{"id":"pcmcat188300050022","name":"Rallypoint"},{"id":"pcmcat188500050025","name":"Basics
+        of DSLR"},{"id":"pcmcat188600050041","name":"Make Your Dreams Real Sweepstakes"},{"id":"pcmcat188800050001","name":"TomTom
+        Step Up Story"},{"id":"pcmcat188800050002","name":"Epson Printers"},{"id":"pcmcat188900050001","name":"Lexmark
+        Printers"},{"id":"pcmcat189900050014","name":"Microsoft Small Business Portal"},{"id":"pcmcat190200050030","name":"HP
+        10 percent More"},{"id":"pcmcat191800050009","name":"Ford Sync"},{"id":"pcmcat191800050012","name":"Mac
+        OS X Snow Leopard"},{"id":"pcmcat191900050005","name":"Get Connected with
+        GPS"},{"id":"pcmcat191900050019","name":"Mac OS X Snow Leopard Refinements"},{"id":"pcmcat192200050029","name":"About
+        MobileMark 2007"},{"id":"pcmcat192300050017","name":"CNET Laptop Comparison
+        Tool"},{"id":"pcmcat193100050036","name":"iPod Connectors"},{"id":"pcmcat193400050000","name":"Windows
+        7 Geek Squad"},{"id":"pcmcat193600050000","name":"Street Week Choice"},{"id":"pcmcat193600050006","name":"Mobile
+        Accessory Finder"},{"id":"pcmcat193600050007","name":"Windows 7 Hardware Pre-Sell"},{"id":"pcmcat193700050039","name":"mIQ"},{"id":"pcmcat194000050060","name":"Geek
+        Squad Windows 7 Install Details"},{"id":"pcmcat194800050003","name":"HP ENVY"},{"id":"pcmcat194800050019","name":"Sony
+        PS3"},{"id":"pcmcat194800050020","name":"Sony PSPGO"},{"id":"pcmcat194800050021","name":"Sony
+        PSP Gran Turismo"},{"id":"pcmcat202400050005","name":"HP Back to Business"},{"id":"pcmcat202800050009","name":"Nintendo
+        Ubisoft"},{"id":"pcmcat204400050005","name":"Sezmi Personal TV"},{"id":"pcmcat205500050012","name":"Lexmark
+        Ink"},{"id":"pcmcat205500050014","name":"No Interest Offer"},{"id":"pcmcat205600050009","name":"In-Store
+        Electric Vehicles"},{"id":"pcmcat205600050016","name":"In-store Health Solutions"},{"id":"pcmcat208500050016","name":"Mobile
+        App"},{"id":"pcmcat209300050000","name":"Kodak EasyShare M Series"},{"id":"pcmcat209400050000","name":"Digital
+        Imaging Bundles"},{"id":"pcmcat209800050005","name":"Resource Articles"},{"id":"pcmcat211600050014","name":"No
+        Interest Camcorder Offer"},{"id":"pcmcat212600050010","name":"DIRECTV HD 3D"},{"id":"pcmcat214600050000","name":"Bundle
+        and Save"},{"id":"pcmcat216600050000","name":"A Better Way to Shop for a Mobile
+        Phone"},{"id":"pcmcat217400050007","name":"Samsung Galaxy S Series"},{"id":"pcmcat217400050008","name":"Distracted
+        Driving"},{"id":"pcmcat219100050001","name":"How to Choose Marine Equipment"},{"id":"pcmcat219900050001","name":"HP
+        Instore Offer"},{"id":"pcmcat220400050017","name":"Essential Things to Know:
+        Wireless Printers"},{"id":"pcmcat220800050022","name":"Car DVD Player & Video
+        Services"},{"id":"pcmcat221300050003","name":"Mdot Promotions"},{"id":"pcmcat221400050018","name":"3D
+        Cameras & Camcorders"},{"id":"pcmcat221700050011","name":"Get More Smiles
+        per Gallon"},{"id":"pcmcat221900050000","name":"Entertainment Free Shipping"},{"id":"pcmcat221900050003","name":"iPod
+        Test Page"},{"id":"pcmcat223400050012","name":"Hitachi Hard Drive Showcase"},{"id":"pcmcat224000050014","name":"Batteries
+        &#38; Power"},{"id":"pcmcat224600050007","name":"Intel 4G WiMAX Mobile Broadband"},{"id":"pcmcat225200050006","name":"Black
+        Friday Search"},{"id":"pcmcat226500050009","name":"Napster Offers"},{"id":"pcmcat226600050004","name":"BF
+        MI Strings Offers"},{"id":"pcmcat226800050003","name":"Cyber Sale"},{"id":"pcmcat227000050002","name":"CM
+        Sticker Sale"},{"id":"pcmcat228000050001","name":"Musical Instruments Price
+        Reductions"},{"id":"pcmcat228500050002","name":"Reward Zone Free Shipping"},{"id":"pcmcat228600050006","name":"Geek
+        Squad Buy Back"},{"id":"pcmcat228700050004","name":"Holly Days Sale"},{"id":"pcmcat229600050017","name":"After
+        Christmas Sale"},{"id":"pcmcat229700050013","name":"Free Shipping"},{"id":"pcmcat230000050010","name":"Buy
+        Back Program"},{"id":"pcmcat232000050000","name":"Buy Back FAQ"},{"id":"pcmcat232000050001","name":"Buy
+        Back How To"},{"id":"pcmcat232200050001","name":"Electric Vehicle Garage Site
+        Survey"},{"id":"pcmcat233000050003","name":"Buy Back for Free"},{"id":"pcmcat233000050015","name":"Car
+        & GPS Generic"},{"id":"pcmcat234500050002","name":"New Technology"},{"id":"pcmcat234800050000","name":"eGift
+        Card Terms and Conditions"},{"id":"pcmcat235700050014","name":"Rocketfish
+        Gaming Accessories"},{"id":"pcmcat237100050005","name":"Category Page"},{"id":"pcmcat237500050000","name":"Digital
+        Imaging Spring Campaign"},{"id":"pcmcat237600050014","name":"Everyday Offers"},{"id":"pcmcat237700050006","name":"DSLR
+        Learn"},{"id":"pcmcat238700050001","name":"Laptops Category Page Test"},{"id":"pcmcat238700050002","name":"Laptop
+        Computers - Deals"},{"id":"pcmcat238700050003","name":"Laptop Category Test
+        Tab 2 "},{"id":"pcmcat238700050004","name":"Laptop Category Test Tab 3"},{"id":"pcmcat238700050005","name":"Laptop
+        Computers - Help Me Choose"},{"id":"pcmcat238700050006","name":"Laptop Category
+        Test Tab 5"},{"id":"pcmcat238900050010","name":"iPod/MP3 Viper Story"},{"id":"pcmcat239200050003","name":"Buy
+        Back App FAQ"},{"id":"pcmcat239600050006","name":"GPS Learning Center"},{"id":"pcmcat239600050012","name":"Xbox
+        Shop"},{"id":"pcmcat239600050016","name":"Xbox Deals"},{"id":"pcmcat239600050017","name":"Xbox
+        Learn"},{"id":"pcmcat239600050018","name":"Xbox What People Are Saying"},{"id":"pcmcat239600050019","name":"Xbox
+        Help Me Choose"},{"id":"pcmcat239600050020","name":"Xbox Services"},{"id":"pcmcat240400050045","name":"iPod/MP3
+        Satellite Radio Story_"},{"id":"pcmcat240600050002","name":"Tablets & iPad
+        Learning Center"},{"id":"pcmcat240900050001","name":"GPS Glossary"},{"id":"pcmcat241500050013","name":"GPS
+        Spring Campaign"},{"id":"pcmcat242200050013","name":"Satellite Radio Basics"},{"id":"pcmcat243600050000","name":"Best
+        Buy - Computers, Video Games, TVs, Cameras, Appliances, Phones"},{"id":"pcmcat243600050001","name":"Best
+        Buy - Computers, Video Games, TVs, Cameras, Appliances, Phones"},{"id":"pcmcat243600050002","name":"Best
+        Buy - Computers, Video Games, TVs, Cameras, Appliances, Phones"},{"id":"pcmcat245300050005","name":"Back
+        to School"},{"id":"pcmcat245400050009","name":"RewardZone Shopping Event"},{"id":"pcmcat246900050013","name":"E-Reader
+        Learning Center"},{"id":"pcmcat248000050016","name":"Deal of the Day"},{"id":"pcmcat249500050016","name":"911
+        Day"},{"id":"pcmcat256700050024","name":"Free Shipping and Free Store Pickup"},{"id":"pcmcat256900050003","name":"Shop
+        Early, Save Big"},{"id":"pcmcat257100050018","name":"Health and Fitness -
+        Learning Center"},{"id":"pcmcat257100050019","name":"Health and Fitness -
+        All articles page"},{"id":"pcmcat257200050000","name":"Reward Zone Early Access
+        Check Status"},{"id":"pcmcat257200050001","name":"Reward Zone Early Access
+        Not Recognized"},{"id":"pcmcat257200050002","name":"Reward Zone Early Access
+        Ready"},{"id":"pcmcat257200050003","name":"Reward Zone Early Access Event
+        Ended"},{"id":"pcmcat257500050031","name":"Escape 150 Adventure Kit"},{"id":"pcmcat257500050033","name":"Guide
+        10 Adventure Kit with Batteries"},{"id":"pcmcat257500050034","name":"Sherpa
+        50 Adventure Kit"},{"id":"pcmcat257600050023","name":"Thanksgiving Sale"},{"id":"pcmcat257800050001","name":"Holiday
+        Return Policy"},{"id":"pcmcat257800050009","name":"Black Friday Movie Screening"},{"id":"pcmcat258400050020","name":"TEST
+        B"},{"id":"pcmcat258500050026","name":"Outlet Center Offers"},{"id":"pcmcat259400050029","name":"RZ
+        Early Access"},{"id":"pcmcat260100050016","name":"Cyber Monday Sale"},{"id":"pcmcat261600050008","name":"Save
+        on Outlet Center "},{"id":"pcmcat262700050014","name":"Selective Buy Testing
+        - Promo B"},{"id":"pcmcat262700050015","name":"Selective Buy Testing - Promo
+        PH"},{"id":"pcmcat262700050016","name":"Selective Buy Testing - Landing Page
+        1"},{"id":"pcmcat262700050017","name":"Selective Buy Testing - Landing Page
+        3"},{"id":"pcmcat263500050001","name":"Selective Buy Testing Promo B"},{"id":"pcmcat264200050006","name":"Phone
+        Freedom"},{"id":"pcmcat264700050003","name":"Terms and Conditions"},{"id":"pcmcat265000050000","name":"FAQs"},{"id":"pcmcat240700050002","name":"Ways
+        to Save on Ink, Toner & Paper"},{"id":"pcmcat266600050000","name":"Gift Card
+        Offer FAQs"},{"id":"pcmcat274000050002","name":"$50 Gift Card Offer"},{"id":"pcmcat279100050003","name":"Geek
+        Squad Protection"},{"id":"pcmcat288300050000","name":"New Marketplace Items"},{"id":"pcmcat299800050000","name":"Ratings
+        and Reviews"},{"id":"pcmcat306900050010","name":"Techfitter"},{"id":"pcmcat310700050003","name":"Smart
+        Care Powered by Geek Squad"},{"id":"pcmcat310900050012","name":"Smart Care
+        Powered By Geek Squad"},{"id":"pcmcat311300050024","name":"Geek Squad Certified
+        Open Box"},{"id":"pcmcat311900050006","name":"VG Page Builder Test"},{"id":"pcmcat311900050019","name":"Hypothesis
+        Test"},{"id":"pcmcat312400050006","name":"Responsive Test"},{"id":"pcmcat312900050002","name":"Deb
+        Promo 11"},{"id":"pcmcat312900050008","name":"Deb promo 12"},{"id":"pcmcat315600050022","name":"Holiday
+        SMS"},{"id":"pcmcat315700050022","name":"St. Jude Children''s Research Hospital"},{"id":"pcmcat287300050012","name":"My
+        Best Buy Early Access"},{"id":"pcmcat317100050004","name":"Blue Sunday"},{"id":"pcmcat329700050043","name":"Best
+        Buy: Experience the Ultimate Showroom"},{"id":"pcmcat329700050045","name":"Best
+        Buy: Experience the Ultimate Showroom"},{"id":"pcmcat326500050008","name":"Emerging
+        Technology"},{"id":"pcmcat323900050003","name":"1-Day Sale"},{"id":"pcmcat332900050013","name":"Tech
+        Essentials"},{"id":"pcmcat332900050012","name":"Ultimate Dormroom"},{"id":"pcmcat334100050000","name":"Back
+        To School"},{"id":"pcmcat334800050007","name":"Video Games category test"},{"id":"pcmcat335400050009","name":"Moving
+        Off Campus"},{"id":"pcmcat335400050010","name":"Staying Fit"},{"id":"pcmcat335400050011","name":"Life
+        After College"},{"id":"pcmcat335500050007","name":"Xbox One platform test"},{"id":"pcmcat335500050008","name":"PS4
+        platform test"},{"id":"pcmcat335500050009","name":"Wii U platform test"},{"id":"pcmcat338600050028","name":"Gaming
+        cat test"},{"id":"pcmcat338700050004","name":"Gaming Xbox test"},{"id":"pcmcat338700050005","name":"Gaming
+        PS4 test"},{"id":"pcmcat338700050006","name":"Gaming wii test"},{"id":"pcmcat339500050003","name":"GHP
+        IE8"},{"id":"pcmcat339600050009","name":"Appliances and Home Theater"},{"id":"pcmcat340400050006","name":"new-technology"},{"id":"pcmcat341900050002","name":"Deals
+        Hub Landing Page"},{"id":"pcmcat345300050010","name":"Store Locator"},{"id":"pcmcat345300050032","name":"Let''s
+        Talk About What''s Possible"},{"id":"pcmcat347600050000","name":"Modal Support"},{"id":"pcmcat347600050001","name":"Platinum
+        Support"},{"id":"pcmcat351000050110","name":"Statement"},{"id":"pcmcat364300050002","name":"VM
+        Disclaimer"},{"id":"pcmcat157400050014","name":"Outdoor GPS"},{"id":"pcmcat161300050025","name":"GHP
+        Test"},{"id":"pcmcat172600050006","name":"Small Business Center"},{"id":"pcmcat287800050003","name":"Cyber
+        2Day Sale"},{"id":"pcmcat338600050001","name":"My Best Buy"},{"id":"pcmcat349500050014","name":"MDOT
+        Black Friday"},{"id":"pcmcat374100050019","name":"Trending Deals"},{"id":"pcmcat374900050005","name":"Photography"},{"id":"pcmcat374900050010","name":"Small
+        Appliances Mothers Day 2"},{"id":"pcmcat748300334665","name":"Test Pages"},{"id":"pcmcat748300441868","name":"Pixels
+        and Guitar Hero Live"},{"id":"pcmcat748300441653","name":"Pixels and Guitar
+        Hero Live"},{"id":"pcmcat102500050032","name":"Financing or Rewards"},{"id":"pcmcat748300491115","name":"Inspire
+        & Learn"},{"id":"pcmcat748300451084","name":"Green Monday at Best Buy"},{"id":"pcmcat748300518938","name":"Same
+        Day Delivery"},{"id":"pcmcat748300659335","name":"Visa Checkout"},{"id":"pcmcat748302037561","name":"Pet
+        Technology"},{"id":"pcmcat309500050010","name":"Cyber Monday at Best Buy"},{"id":"pcmcat149900050024","name":"ENERGY
+        STAR Certified Products - Best Buy"},{"id":"pcmcat1491511263655","name":"Explore
+        Your Local Store - DC / Baltimore"},{"id":"pcmcat1493755826788","name":"My
+        Best Buy - Write a Review"},{"id":"pcmcat262700050001","name":"Global"},{"id":"pcmcat1505401522959","name":"Chase
+        Pay"},{"id":"pcmcat1518543246407","name":"International Sites"},{"id":"pcmcat748302047114","name":"App
+        Exclusive Offers List Page"},{"id":"pcmcat1527688377766","name":"Using Voice
+        Assistants to Explore Best Buy"},{"id":"pcmcat1530212400327","name":"Teen
+        Tech Center"},{"id":"pcmcat1530201105801","name":"Parent Hub"},{"id":"pcmcat1534965372641","name":"Home
+        Remodeling Ideas"},{"id":"pcmcat322600050001","name":"Movers"},{"id":"pcmcat1485360618161","name":"Easy
+        Replenish"}]}]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:09:55 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:45 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/categories?apiKey=123FakeApiKey&format=json&show=id,name
@@ -72,7 +234,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:09:55 GMT
+      - Mon, 28 Jan 2019 13:06:14 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
@@ -83,14 +245,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":10,"currentPage":1,"total":3941,"totalPages":395,"queryTime":"0.023","totalTime":"0.037","partial":false,"canonicalUrl":"/v1/categories?show=id,name&format=json&apiKey=123FakeApiKey","categories":[{"id":"abcat0010000","name":"Gift
+      string: '{"from":1,"to":10,"currentPage":1,"total":3995,"totalPages":400,"queryTime":"0.007","totalTime":"0.022","partial":false,"canonicalUrl":"/v1/categories?show=id,name&format=json&apiKey=123FakeApiKey","categories":[{"id":"abcat0010000","name":"Gift
         Ideas"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0101000","name":"TVs"},{"id":"abcat0101001","name":"All
         Flat-Screen TVs"},{"id":"abcat0101005","name":"TV/DVD Combos"},{"id":"abcat0102000","name":"Blu-ray
         & DVD Players"},{"id":"abcat0102003","name":"Blu-ray Players"},{"id":"abcat0102005","name":"DVD
         Players"},{"id":"abcat0104000","name":"Digital TV Tuners & Converters"},{"id":"abcat0105000","name":"TV
         & Internet Service Providers"}]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:09:57 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:46 GMT
 - request:
     method: get
     uri: https://api.bestbuy.com/v1/categories?apiKey=123Key&format=json&show=name
@@ -112,7 +274,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 01 Dec 2018 08:09:56 GMT
+      - Mon, 28 Jan 2019 13:06:16 GMT
       Server:
       - Apigee Router
       Content-Length:
@@ -124,10 +286,10 @@ http_interactions:
       string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
         to validate your API Key.\"}\n        "
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:09:58 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:48 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/categories?apiKey=123FakeApiKey&format=json&limit=10&page=2
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123FakeApiKey&format=json&limit=10&page=2&show=
     body:
       encoding: US-ASCII
       string: ''
@@ -154,72 +316,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 01 Dec 2018 08:09:58 GMT
+      - Mon, 28 Jan 2019 13:06:33 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '6329'
+      - '255'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":11,"to":20,"currentPage":2,"total":3941,"totalPages":395,"queryTime":"0.051","totalTime":"0.060","partial":false,"canonicalUrl":"/v1/categories?page=2&format=json&apiKey=123FakeApiKey","categories":[{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture","active":true,"url":"https://www.bestbuy.com/site/tv-home-theater/tv-stands-mounts-furniture/abcat0106000.c?id=abcat0106000&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"}],"subCategories":[{"id":"abcat0106001","name":"TV
-        Stands"},{"id":"abcat0106004","name":"TV Mounts"},{"id":"pcmcat332100050008","name":"Projector
-        Mounts & Screens"},{"id":"pcmcat332100050010","name":"Speaker Stands & Mounts"},{"id":"pcmcat332100050015","name":"A/V
-        Component Shelving"},{"id":"abcat0106008","name":"A/V Component Racks & Shelving"},{"id":"abcat0106010","name":"CD
-        & DVD Media Storage"},{"id":"pcmcat249700050007","name":"Home Theater Furniture"},{"id":"pcmcat219300050000","name":"Magnolia
-        Home Theater TV Stands"},{"id":"pcmcat184500050000","name":"Furniture Assembly"},{"id":"pcmcat218900050031","name":"Furniture
-        Collections"}]},{"id":"abcat0106001","name":"TV Stands","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/tv-stands/abcat0106001.c?id=abcat0106001&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106001","name":"TV Stands"}],"subCategories":[{"id":"pcmcat332100050000","name":"All
-        TV Stands"},{"id":"pcmcat332100050001","name":"TV Corner Stands"},{"id":"pcmcat332100050002","name":"TV
-        Stands with Flat-Panel Mounts"},{"id":"pcmcat332100050003","name":"TV Stands
-        with Fireplace"},{"id":"pcmcat1521490874043","name":"TV Stands with Cabinets"}]},{"id":"abcat0106002","name":"Speaker
-        Stands","active":true,"url":"https://www.bestbuy.com/site/speaker-stands-mounts/speaker-stands/abcat0106002.c?id=abcat0106002&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0200000","name":"Audio"},{"id":"abcat0208000","name":"Home
-        Audio Accessories"},{"id":"abcat0208015","name":"Speaker Accessories"},{"id":"pcmcat332100050010","name":"Speaker
-        Stands & Mounts"},{"id":"abcat0106002","name":"Speaker Stands"}],"subCategories":[]},{"id":"abcat0106004","name":"TV
-        Mounts","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/tv-mounts/abcat0106004.c?id=abcat0106004&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106004","name":"TV Mounts"}],"subCategories":[{"id":"pcmcat332100050018","name":"Full-Motion
-        TV Mounts"},{"id":"pcmcat332100050019","name":"Tilt TV Mounts"},{"id":"pcmcat332100050020","name":"Fixed
-        TV Mounts"},{"id":"pcmcat332100050021","name":"Ceiling TV Mounts"},{"id":"pcmcat275900050017","name":"TV
-        Mount Accessories"},{"id":"pcmcat138100050028","name":"TV Mounting Services"}]},{"id":"abcat0106007","name":"Speaker
-        Wall Mounts","active":true,"url":"https://www.bestbuy.com/site/speaker-accessories/speaker-wall-mounts/abcat0106007.c?id=abcat0106007&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0200000","name":"Audio"},{"id":"abcat0208000","name":"Home
-        Audio Accessories"},{"id":"abcat0208015","name":"Speaker Accessories"},{"id":"abcat0106007","name":"Speaker
-        Wall Mounts"}],"subCategories":[{"id":"pcmcat138100050029","name":"Speaker
-        Mounting"}]},{"id":"abcat0106008","name":"A/V Component Racks & Shelving","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/av-component-racks/abcat0106008.c?id=abcat0106008&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106008","name":"A/V Component Racks
-        & Shelving"}],"subCategories":[]},{"id":"abcat0106009","name":"Home Theater
-        Seating","active":true,"url":"https://www.bestbuy.com/site/home-theater-furniture/home-theater-seating/abcat0106009.c?id=abcat0106009&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"pcmcat312300050015","name":"Home, Garage & Office"},{"id":"pcmcat249700050006","name":"Furniture
-        & Decor"},{"id":"pcmcat249700050007","name":"Home Theater Furniture"},{"id":"abcat0106009","name":"Home
-        Theater Seating"}],"subCategories":[]},{"id":"abcat0106010","name":"CD & DVD
-        Media Storage","active":true,"url":"https://www.bestbuy.com/site/tv-stands-mounts-furniture/cd-dvd-storage/abcat0106010.c?id=abcat0106010&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"}],"subCategories":[{"id":"abcat0106015","name":"Media
-        Cabinets"},{"id":"pcmcat332100050012","name":"Media Shelf Towers"},{"id":"abcat0106011","name":"Portable
-        CD & DVD Storage"},{"id":"abcat0106020","name":"Jewel Cases"},{"id":"abcat0106019","name":"xFire
-        Safes"}]},{"id":"abcat0106011","name":"Portable CD & DVD Storage","active":true,"url":"https://www.bestbuy.com/site/cd-dvd-storage/portable-cd-dvd-storage/abcat0106011.c?id=abcat0106011&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"},{"id":"abcat0106011","name":"Portable
-        CD & DVD Storage"}],"subCategories":[{"id":"abcat0106012","name":"Small"},{"id":"abcat0106013","name":"Medium"},{"id":"abcat0106014","name":"Large"}]},{"id":"abcat0106015","name":"Media
-        Cabinets","active":true,"url":"https://www.bestbuy.com/site/cd-dvd-storage/media-cabinets/abcat0106015.c?id=abcat0106015&cmp=RMX-cat","path":[{"id":"cat00000","name":"Best
-        Buy"},{"id":"abcat0100000","name":"TV & Home Theater"},{"id":"abcat0106000","name":"TV
-        Stands, Mounts & Furniture"},{"id":"abcat0106010","name":"CD & DVD Media Storage"},{"id":"abcat0106015","name":"Media
-        Cabinets"}],"subCategories":[{"id":"abcat0106016","name":"Small"},{"id":"abcat0106017","name":"Medium"},{"id":"abcat0106018","name":"Large"}]}]}'
+      string: '{"from":11,"to":20,"currentPage":2,"total":3995,"totalPages":400,"queryTime":"0.039","totalTime":"0.047","partial":false,"canonicalUrl":"/v1/categories?show=&page=2&format=json&apiKey=123FakeApiKey","categories":[{},{},{},{},{},{},{},{},{},{}]}'
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:09:59 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:50 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/categories?apiKey=123Key&format=json&limit=10&page=2
+    uri: https://api.bestbuy.com/v1/categories?apiKey=123Key&format=json&limit=10&page=2&show=
     body:
       encoding: US-ASCII
       string: ''
@@ -238,7 +351,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 01 Dec 2018 08:09:58 GMT
+      - Mon, 28 Jan 2019 13:06:19 GMT
       Server:
       - Apigee Router
       Content-Length:
@@ -250,10 +363,10 @@ http_interactions:
       string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
         to validate your API Key.\"}\n        "
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:00 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:51 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/categories(id=abcat500&name=Electronics)?apiKey=123Key&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
+    uri: https://api.bestbuy.com/v1/categories(name=Electronics)?apiKey=123Key&format=json&limit=10&page=1&show=id,name,subCategories.id,subCategories.name
     body:
       encoding: US-ASCII
       string: ''
@@ -272,7 +385,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 01 Dec 2018 08:09:59 GMT
+      - Mon, 28 Jan 2019 13:06:36 GMT
       Server:
       - Apigee Router
       Content-Length:
@@ -284,5 +397,5 @@ http_interactions:
       string: "\n            {\"errorCode\":\"403\", \"errorMessage\":\"We were unable
         to validate your API Key.\"}\n        "
     http_version: 
-  recorded_at: Sat, 01 Dec 2018 08:10:01 GMT
+  recorded_at: Mon, 28 Jan 2019 13:05:52 GMT
 recorded_with: VCR 4.0.0
